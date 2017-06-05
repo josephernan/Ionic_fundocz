@@ -1,0 +1,62 @@
+<ion-view class="landing-container">
+  <ion-content class="has-header">
+  
+  <!--CHANGE THIS TO A CSS FIRST ELEMENT-->
+  <h3 class="title" ng-bind="ui.newfundinvitation"></h3>
+  
+  <!--SHOW INVITES-->
+  
+  
+   <div ng-repeat="invite in followers" ng-show="invite.activities!=1" >
+   
+   
+   
+   
+	 
+      <div class="row">
+         <div class="col col-40 fund-name-group">
+             <label  ng-bind="ui.fund_name"></label>
+             <div>Arowanna Fund</div>
+         </div>
+         <div class="col button-group"><button class="button button-blue" ng-disabled="invite.activities!=0" ng-click="termacpt(invite);changeState('app.invite-terms')" ng-bind="ui.accept"></button>
+              <button class="button button-grey" ng-click="termdec(invite)" ng-disabled="invite.activities!=0" ng-bind="ui.decline"></button>
+         </div>
+       </div>
+
+    </div>
+   
+   
+   <!--SHOW ACTIVE FUNDS-->
+   
+	  <div class="" >
+          <div ng-repeat="invite in followers" ng-show="invite.active==true" >
+             <div class="invite-item" ng-repeat ="fund in invite.funds">
+                  <h4 class="title" ng-bind="fund.full_name" ui-sref="app.fund-detail({id: fund.id})">Fund Strategy</h4>
+                  <div >
+                      <div class="" ui-sref="app.fund-detail({id:fund.id})">
+                          <div class="row item-header">
+                              <label class="col col-40" ng-bind="ui.fund_name"></label>
+                              <label class="col col-20" ng-bind="ui.date"></label>
+                              <label class="col" ng-bind="ui.mtd"></label>
+                              <label class="col" ng-bind="ui.ytd"></label>
+                              <label class="col" ng-bind="ui.avg"></label>
+                          </div>
+                          <div class="row item-body">
+                              <div class="col col-40" ng-bind="fund.full_name"></div>
+                              <div class="col col-20" ng-bind="fund.performance_date_label"></div>
+                              <div class="col" ng-bind="fund.mtd"></div>
+                              <div class="col" ng-bind="fund.ytd"></div>
+                              <div class="col" ng-bind="fund.avg"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div><!--end of invite item-->
+          </div><!--end of invite in followers-->
+</div>
+</ion-view>
+
+
+
+
+
+

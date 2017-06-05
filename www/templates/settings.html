@@ -1,0 +1,98 @@
+<ion-view class="settings">
+  <ion-content class="has-header" scroll="false">
+
+  	<div class="language">
+  		<label ng-bind="ui.language"></label>
+      <button class="button button-light" ng-class="{'active':lang=='ch'}" ng-click="setLang('ch')">中文</button>
+      <button class="button button-light" ng-class="{'active':lang=='en'}" ng-click="setLang('en')">ENG</button>
+  	</div>
+
+      <button class="button button-light" ng-class="{'active':true}" ng-click="logout()" ng-bind="ui.logout">LOGOUT</button>
+
+    <div class="select-item">
+      <label ng-bind="ui.age_range"></label>
+      <div class="select">
+        <select>
+          <option>18-24</option>
+          <option selected>25-34</option>
+          <option>35-44</option>
+          <option>45-54</option>
+          <option>55-64</option>
+          <option>64+</option>
+          
+        </select>
+        <i class="ion-arrow-down-b pull-right"></i>
+      </div>
+    </div>
+
+    <div class="select-item">
+      <label ng-bind="ui.location"></label>
+      <div class="select">
+        <select>
+            <option value="HKG" ng-bind="ui.HKG">Hong Kong</option>
+            <option value="CHN" ng-bind="ui.CHN">China</option>
+            <option value="IND" ng-bind="ui.IND">India</option>
+            <option value="USA" ng-bind="ui.USA">United States</option>
+            <option value="IDN" ng-bind="ui.IDN">Indonesia</option>
+            <option value="BRA" ng-bind="ui.BRA">Brazil</option>
+            <option value="PAK" ng-bind="ui.PAK">Pakistan</option>
+            <option value="NGA" ng-bind="ui.NGA">Nigeria</option>
+            <option value="BGD" ng-bind="ui.BGD">Bangladesh</option>
+            <option value="RUS" ng-bind="ui.RUS">Russia</option>
+            <option value="JAP" ng-bind="ui.JAP">Japan</option>
+            <option value="MEX" ng-bind="ui.MEX">Mexico</option>
+            <option value="PHL" ng-bind="ui.PHL">Philippines</option>
+            <option value="NZL" ng-bind="ui.NZL">Ethiopia</option>
+            <option value="VNM" ng-bind="ui.VNM">Vietnam</option>
+            <option value="EGY" ng-bind="ui.EGY">Egypt</option>
+            <option value="IRA" ng-bind="ui.IRA">Iran</option>
+            <option value="GER" ng-bind="ui.GER">Germany</option>
+            <option value="TUR" ng-bind="ui.TUR">Turkey</option>
+            <option value="AUS" ng-bind="ui.AUS">Australia</option>
+            <option value="THA" ng-bind="ui.THA">Thailand</option>
+            <option value="FRA" ng-bind="ui.FRA">France</option>
+            <option value="GBR" ng-bind="ui.GBR">United Kingdom</option>
+            <option value="ITA" ng-bind="ui.ITA">Italy</option>
+            <option value="MMR" ng-bind="ui.MMR">Burma</option>
+            <option value="ZAF" ng-bind="ui.ZAF">South Africa</option>
+            <option value="TAN" ng-bind="ui.TAN">Tanzania</option>
+            <option value="KOR" ng-bind="ui.KOR">Korea, South</option>
+            <option value="ESP" ng-bind="ui.ESP">Spain</option>
+            <option value="COL" ng-bind="ui.COL">Colombia</option>
+            <option value="KEN" ng-bind="ui.KEN">Kenya</option>
+            <option value="UKR" ng-bind="ui.UKR">Ukraine</option>
+            <option value="ARG" ng-bind="ui.ARG">Argentina</option>
+            <option value="ALG" ng-bind="ui.ALG">Algeria</option>
+            <option value="POL" ng-bind="ui.POL">Poland</option>
+            <option value="UGA" ng-bind="ui.UGA">Uganda</option>
+            <option value="IRA" ng-bind="ui.IRA">Iraq</option>
+            <option value="SUD" ng-bind="ui.SUD">Sudan</option>
+            <option value="CAN" ng-bind="ui.CAN">Canada</option>
+            <option value="MAR" ng-bind="ui.MAR">Morocco</option>
+            <option value="AFG" ng-bind="ui.AFG">Afghanistan</option>
+            <option value="NPL" ng-bind="ui.NPL">Nepal</option>
+            <option value="MYS" ng-bind="ui.MYS">Malaysia</option>
+            <option value="PER" ng-bind="ui.PER">Peru</option>
+            <option value="VEN" ng-bind="ui.VEN">Venezuela</option>
+            <option value="UZB" ng-bind="ui.UZB">Uzbekistan</option>
+            <option value="SAU" ng-bind="ui.SAU">Saudi Arabia</option>
+            <option value="YEM" ng-bind="ui.YEM">Yemen</option>
+            <option value="GHA" ng-bind="ui.GHA">Ghana</option>
+            <option value="MOZ" ng-bind="ui.MOZ">Mozambique</option>
+            <option value="PRK" ng-bind="ui.PRK">Korea, North</option>
+            
+        </select>
+        <i class="ion-arrow-down-b pull-right"></i>
+      </div>
+    </div>
+
+     
+    
+    
+
+    <div class="about-btn">
+      <button class="button button-light" ng-bind="ui.about_this_app"></button>
+    </div>
+
+  </ion-content>
+</ion-view>
